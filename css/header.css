@@ -17,11 +17,11 @@
 .logo-header .monograma-header {
   width: 45px;
 }
-.divisor {
-  width: 5px;
-  height: 40px;
-  background-color: red;
-}
+  .divisor {
+    width: 1px;
+    height: 25px;
+    background-color: rgb(216, 200, 200);
+  }
 .menu-hamburger {
   background: none;
   border: none;
@@ -48,13 +48,13 @@ body {
   .main-header {
     padding-inline: 1rem;
   }
-  .logo-header{
+  .logo-header {
     gap: 0.5rem;
   }
   .logo-header .monograma-header {
     width: 35px;
   }
-  .logo-header .nome-header{
+  .logo-header .nome-header {
     font-size: 15px;
   }
 }
