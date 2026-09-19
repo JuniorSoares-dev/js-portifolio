@@ -9,7 +9,7 @@
   align-items: center;
   gap: 1rem;
 }
-.logo-header span {
+.logo-header .nome-header {
   font-family: "Montserrat-Regular";
   font-weight: 300;
   letter-spacing: 0.25em;
@@ -20,7 +20,7 @@
 .divisor {
   background: none;
   border: none;
-  width: 0.1px;
+  width: 1px;
   height: 25px;
   background-color: rgb(216, 200, 200);
 }
