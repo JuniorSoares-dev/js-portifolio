@@ -18,11 +18,9 @@
   width: 45px;
 }
 .divisor {
-  background: none;
-  border: none;
-  width: 1px;
-  height: 25px;
-  background-color: rgb(216, 200, 200);
+  width: 5px;
+  height: 40px;
+  background-color: red;
 }
 .menu-hamburger {
   background: none;
