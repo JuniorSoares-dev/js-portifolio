@@ -10,8 +10,7 @@
   gap: 1rem;
 }
 .logo-header .nome-header {
-  font-family: "Montserrat-Regular";
-  font-weight: 300;
+  font-family: "Montserrat";
   letter-spacing: 0.25em;
 }
 .logo-header .monograma-header {
