@@ -51,13 +51,12 @@
 
 .hero-bottom a {
   position: relative;
-  overflow: hidden;
 
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
 
   color: #f0f0f0;
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(0, 0, 0);
 
   padding: 10px 30px;
   text-align: center;
@@ -65,47 +64,41 @@
   border: 1px solid #c0c0c0;
   border-radius: 40px;
 
-  isolation: isolate;
+  transition: 0.3s ease;
+
+  --angulo: 0deg;
 }
-.hero-bottom a:hover::before {
-  opacity: 1;
+
+@property --angulo {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
-.hero-bottom a::before {
-  content: "";
-  position: absolute;
 
-  width: 35px;
-  height: 2px;
+.hero-bottom a:hover {
+  border-color: transparent;
 
-  background: #ffffff;
-  border-radius: 50%;
+  background:
+    linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    conic-gradient(
+        from var(--angulo),
+        #888 0deg,
+        #c8c8c8 300deg,
+        #ffffff 330deg,
+        #ffffff 345deg,
+        #c8c8c8 355deg,
+        #888 360deg
+      )
+      border-box;
 
-  box-shadow: 0 0 10px #ffffff;
+  box-shadow:
+    0 0 10px rgba(220, 220, 220, 0.5);
 
-  offset-path: inset(0 round 40px);
-  offset-distance: 0%;
-
-  animation: percorre-borda 3s linear infinite;
-
-  z-index: 2;
-
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  animation: luz-borda 3s linear infinite;
 }
-.hero-bottom a::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
 
-  background: rgb(7, 7, 7);
-  border-radius: inherit;
-
-  z-index: -1;
-}
-@keyframes percorre-borda {
+@keyframes luz-borda {
   to {
-    offset-distance: 100%;
+    --angulo: 360deg;
   }
-}
-@media (max-width: 392px) {
 }
