@@ -5,6 +5,27 @@
   gap: 1rem;
   padding: 1.5rem;
 }
+.hero-wrapper {
+  position: relative;
+  min-height: 100svh;
+  background-image: url("../assets/images/fundo-hero-js-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-foto {
+  position: absolute;
+  width: 20rem;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+.hero-label,
+.hero-content,
+.hero-bottom {
+  position: relative;
+  z-index: 2;
+}
 .hero .hero-content {
   display: flex;
   flex-direction: column;
@@ -91,8 +112,7 @@
       )
       border-box;
 
-  box-shadow:
-    0 0 10px rgba(220, 220, 220, 0.5);
+  box-shadow: 0 0 10px rgba(220, 220, 220, 0.5);
 
   animation: luz-borda 3s linear infinite;
 }
@@ -100,5 +120,10 @@
 @keyframes luz-borda {
   to {
     --angulo: 360deg;
+  }
+}
+@media (max-width: 395px) {
+  .hero {
+    padding: 1rem 1.5rem;
   }
 }
