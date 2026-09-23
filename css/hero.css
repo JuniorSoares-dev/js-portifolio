@@ -3,11 +3,10 @@
   flex-direction: column;
   flex: 1;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem;
 }
 .hero-wrapper {
   position: relative;
-  min-height: 100svh;
   background-image: url("../assets/images/fundo-hero-js-mobile.webp");
   background-size: cover;
   background-position: center;
@@ -15,7 +14,7 @@
 }
 .hero-foto {
   position: absolute;
-  width: 20rem;
+  width: 19rem;
   z-index: 1;
   bottom: 0;
   right: 0;
@@ -120,10 +119,5 @@
 @keyframes luz-borda {
   to {
     --angulo: 360deg;
-  }
-}
-@media (max-width: 395px) {
-  .hero {
-    padding: 1rem 1.5rem;
   }
 }
