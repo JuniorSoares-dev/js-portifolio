@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 1rem;
+  gap: 2rem;
   padding: 3rem 1.5rem;
 }
 .hero-wrapper {
@@ -119,5 +119,19 @@
 @keyframes luz-borda {
   to {
     --angulo: 360deg;
+  }
+}
+@media (max-width: 381px){
+  .hero-content h1{
+    font-size: 2rem;
+  }
+  .hero-content p{
+    font-size: 0.9rem;
+  }
+  .hero-bottom a{
+    padding: 10px 15px;
+  }
+  .hero-foto{
+    width: 18rem;
   }
 }
