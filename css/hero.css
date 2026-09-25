@@ -1,9 +1,10 @@
 .hero {
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 2rem;
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem 3rem 1.5rem;
 }
 .hero-wrapper {
   position: relative;
@@ -28,7 +29,7 @@
 .hero .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .hero-label {
   display: flex;
@@ -42,43 +43,39 @@
   background-color: #c0c0c0;
 }
 .hero-label p {
-  font-family: "Montserrat", sans-serif;
   font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 0.2em;
   color: #c0c0c0;
 }
 .hero-content h1 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
 }
 .hero-content h1 span {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #f0f0f0;
 }
 .hero-content > p {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 .hero-bottom {
   display: flex;
+  justify-content: space-evenly;
   gap: 1rem;
 }
 
 .hero-bottom a {
   position: relative;
 
-  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
 
   color: #f0f0f0;
   background-color: rgb(0, 0, 0);
 
-  padding: 10px 30px;
+  padding: 15px 30px;
   text-align: center;
 
   border: 1px solid #c0c0c0;
@@ -121,17 +118,17 @@
     --angulo: 360deg;
   }
 }
-@media (max-width: 381px){
-  .hero-content h1{
+@media (max-width: 381px) {
+  .hero-content h1 {
     font-size: 2rem;
   }
-  .hero-content p{
+  .hero-content p {
     font-size: 0.9rem;
   }
-  .hero-bottom a{
+  .hero-bottom a {
     padding: 10px 15px;
   }
-  .hero-foto{
+  .hero-foto {
     width: 18rem;
   }
 }
