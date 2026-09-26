@@ -2,4 +2,80 @@
   background-image: url(../assets/images/fundo-servicos-mobile.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.servicos-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.servicos-label p {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #c0c0c0;
+}
+.servicos-label .linha-servicos {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #c0c0c0;
+}
+.servicos-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.servicos-header h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #f0f0f0;
+}
+.servicos-header h2 span {
+  font-weight: 400;
+  background: linear-gradient(90deg, #a08a72, #c1ad92);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.servicos-header p {
+  color: #c0c0c0;
+}
+.lista-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  counter-reset: servico;
+}
+.lista-servicos li {
+  display: flex;
+  flex-direction: column;
+  counter-increment: servico;
+}
+.lista-servicos li::before {
+  content: counter(servico, decimal-leading-zero);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+.lista-servicos h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #f0f0f0;
+}
+.lista-servicos li p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #c0c0c0
+}
+.servico-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
