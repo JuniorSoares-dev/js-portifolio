@@ -54,6 +54,7 @@
 .lista-servicos li {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   counter-increment: servico;
 }
 .lista-servicos li::before {
@@ -72,7 +73,7 @@
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.5;
-  color: #c0c0c0
+  color: #c0c0c0;
 }
 .servico-info{
   display: flex;
