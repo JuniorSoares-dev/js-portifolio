@@ -4,9 +4,17 @@
   background-repeat: no-repeat;
   padding: 4rem 1.5rem;
 }
-.projeto{
+.projetos-cards {
   display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.projeto {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 .projetos-label {
   display: flex;
