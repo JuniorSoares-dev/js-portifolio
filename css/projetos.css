@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   padding: 4rem 1.5rem;
 }
 .projetos-header {
