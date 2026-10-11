@@ -163,4 +163,21 @@
 .carrossel-controles {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.carrossel-controles button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(192, 192, 192, 0.25);
+  border-radius: 50%;
+  background: #171c24;
+
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
