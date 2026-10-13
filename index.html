@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/servicos.css" />
     <link rel="stylesheet" href="css/projetos.css" />
 
+    <script src="js/carrossel.js" defer></script>
     <link
       rel="icon"
       href="assets/icons/monograma-favicon-js-final.png"
@@ -130,7 +131,10 @@
           <span class="linha-projetos"></span>
           <p>PROJETOS</p>
         </div>
-        <h2>Alguns dos projetos que já desenvolvi.</h2>
+        <h2>
+          Alguns dos projetos <br />
+          <span>que já desenvolvi.</span>
+        </h2>
         <p>
           Aqui você encontra alguns dos sites e interfaces que desenvolvi, com
           foco em design, responsividade e experiência do usuário.
@@ -297,7 +301,11 @@
       </div>
       <div class="carrossel-controles">
         <button type="button" aria-label="Projeto anterior">←</button>
-        <span>01 / 03</span>
+        <div class="carrossel-indicadores" aria-label="Projeto 1 de 3">
+          <span class="ativo"></span>
+          <span></span>
+          <span></span>
+        </div>
         <button type="button" aria-label="Próximo projeto">→</button>
       </div>
     </section>

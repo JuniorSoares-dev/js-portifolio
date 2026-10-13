@@ -21,8 +21,6 @@
 .projetos-cards {
   display: flex;
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
 }
 .projeto {
   background-image: url(../assets/images/fundo-card-projetos.png);
@@ -35,7 +33,7 @@
   justify-content: center;
   gap: 0.85rem;
 
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 0.3rem;
   flex: 0 0 100%;
   scroll-snap-align: start;
 
@@ -160,6 +158,11 @@
   color: #d0d0d0;
   font-size: 0.72rem;
 }
+.projetos-carrossel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
 .carrossel-controles {
   display: flex;
   justify-content: center;
@@ -180,4 +183,18 @@
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
+}
+.carrossel-indicadores {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.carrossel-indicadores span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #555;
+}
+.carrossel-indicadores .ativo {
+  background-color: #f0f0f0;
 }
