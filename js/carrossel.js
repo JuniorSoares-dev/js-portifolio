@@ -34,8 +34,27 @@ botaoAnterior.addEventListener("click", () => {
     atualizarIndicadores(indiceAtual);
   }
 });
-carrossel.addEventListener("scroll", () => {
-  const indice = Math.round(carrossel.scrollLeft / carrossel.clientWidth);
+let ultimoIndice = 0;
 
-  atualizarIndicadores(indice);
+carrossel.addEventListener("scroll", () => {
+  const cards = document.querySelectorAll(".projeto");
+  const posicaoAtual = carrossel.scrollLeft;
+
+  let indiceMaisProximo = 0;
+  let menorDistancia = Infinity;
+
+  cards.forEach((card, indice) => {
+    const distancia = Math.abs(card.offsetLeft - posicaoAtual);
+
+    if (distancia < menorDistancia) {
+      menorDistancia = distancia;
+      indiceMaisProximo = indice;
+    }
+  });
+
+  if (indiceMaisProximo !== ultimoIndice) {
+    ultimoIndice = indiceMaisProximo;
+    indiceAtual = indiceMaisProximo;
+    atualizarIndicadores(indiceAtual);
+  }
 });
