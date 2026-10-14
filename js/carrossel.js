@@ -34,3 +34,8 @@ botaoAnterior.addEventListener("click", () => {
     atualizarIndicadores(indiceAtual);
   }
 });
+carrossel.addEventListener("scroll", () => {
+  const indice = Math.round(carrossel.scrollLeft / carrossel.clientWidth);
+
+  atualizarIndicadores(indice);
+});
