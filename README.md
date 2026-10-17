@@ -59,12 +59,6 @@ js-portifolio/
 * Implementação da seção Contato.
 * Melhorias contínuas na responsividade e experiência do usuário.
 
-## ▶️ Como executar
-
-1. Clone este repositório.
-2. Abra a pasta do projeto.
-3. Execute o arquivo `index.html` no navegador.
-
 ## 👨‍💻 Desenvolvedor
 
 **Junior Soares**
