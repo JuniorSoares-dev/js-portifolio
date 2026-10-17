@@ -1,10 +1,13 @@
 # Junior Soares | Portfólio Front-end
 
+[🌐 Acessar portfólio online](https://juniorsoares-dev.github.io/js-portifolio/)
+
 Portfólio pessoal desenvolvido para apresentar meus projetos, serviços e habilidades na área de desenvolvimento Front-end.
 
 O projeto tem como objetivo construir uma presença digital profissional, reunindo trabalhos desenvolvidos e demonstrando minhas habilidades na criação de interfaces modernas e funcionais.
 
 **Status:** Em desenvolvimento 🚧
+
 
 ## 🚀 Tecnologias utilizadas
 
