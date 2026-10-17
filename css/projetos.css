@@ -33,7 +33,7 @@
   justify-content: center;
   gap: 0.85rem;
 
-  padding: 1rem 1.5rem 0.3rem;
+  padding: 1rem 1.5rem;
   flex: 0 0 100%;
   scroll-snap-align: start;
 
@@ -114,6 +114,7 @@
 .projeto-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 0.4rem;
 }
 .projeto-info > span {
@@ -127,6 +128,7 @@
   letter-spacing: -0.025em;
 }
 .projeto-info p {
+  min-height: 4.8rem;
   font-size: 0.8rem;
   line-height: 1.5;
   color: #c0c0c0;
@@ -137,13 +139,45 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.35rem;
+  margin-top: 1rem;
   font-size: 0.8rem;
 }
 .projeto-info-bottom a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(214, 184, 148, 0.35);
+  border-radius: 999px;
+
+  background-color: rgba(214, 184, 148, 0.06);
   color: #f0f0f0;
+
+  font-size: 0.75rem;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+.projeto-info-bottom a span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.projeto-info-bottom a:hover span {
+  transform: translateX(4px);
+}
+.projeto-info-bottom a:hover {
+  color: #d6b894;
+}
+.projeto-info-bottom a:focus-visible {
+  outline: 2px solid #d6b894;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 .projeto-tecnologias {
   display: flex;
