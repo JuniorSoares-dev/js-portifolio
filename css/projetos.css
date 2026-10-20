@@ -196,6 +196,10 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.projetos-carrossel::-webkit-scrollbar {
+  display: none;
 }
 .carrossel-controles {
   display: flex;
