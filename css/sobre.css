@@ -1,0 +1,44 @@
+.sobre {
+  background-image: url("../assets/images/fundo-sobre-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 1.5rem;
+}
+.sobre-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.linha-sobre {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #c0c0c0;
+}
+.sobre-label p {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #c0c0c0;
+}
+.sobre-tecnologias {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.sobre-tecnologias li {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+  gap: 0.3rem;
+}
+.sobre-tecnologias img {
+  color: #bfc3ca;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.sobre-tecnologias li:not(:last-child) {
+  border-right: 1px solid #30343a;
+  padding-right: 1rem;
+}
