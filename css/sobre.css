@@ -1,8 +1,11 @@
 .sobre {
+    display: flex;
+    flex-direction: column;
   background-image: url("../assets/images/fundo-sobre-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 4rem 1.5rem;
+  gap: 2rem;
 }
 .sobre-label {
   display: flex;
@@ -21,8 +24,22 @@
   letter-spacing: 0.2em;
   color: #c0c0c0;
 }
+.sobre-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sobre-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sobre-info p{
+    color: #c0c0c0;
+}
 .sobre-tecnologias {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 0;
 }
