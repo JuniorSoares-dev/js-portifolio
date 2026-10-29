@@ -67,8 +67,38 @@
 }
 .sobre-card {
   display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   background-color: #111214;
   border: 1px solid #303030;
   border-radius: 12px;
   padding: 1.5rem;
+}
+.sobre-card-icone {
+  width: 24px;
+  height: auto;
+  flex-shrink: 0;
+
+  padding: 0.6rem;
+
+  background-color: #1c1b19;
+  border: 1px solid #3d352c;
+  border-radius: 10px;
+
+  box-sizing: content-box;
+}
+.sobre-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.sobre-card-info h3 {
+  font-size: 1rem;
+}
+.sobre-card-lista {
+  list-style-type: disc;
+  font-size: 0.8rem;
+}
+.sobre-card-lista li::marker {
+  color: #D6B894
 }
