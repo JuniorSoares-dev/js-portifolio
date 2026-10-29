@@ -69,10 +69,37 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  background-color: #111214;
-  border: 1px solid #303030;
+
+  background: #090b0f;
+
+  border: 1px solid rgba(120, 140, 170, 0.2);
+
+  box-shadow: none;
+
+  position: relative;
+  isolation: isolate;
+
   border-radius: 12px;
   padding: 1.5rem;
+}
+.sobre-card::before {
+  content: "";
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+
+  width: 70%;
+  height: 100%;
+
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(220, 175, 125, 0.18),
+    rgba(220, 175, 125, 0.06) 35%,
+    transparent 70%
+  );
+
+  pointer-events: none;
 }
 .sobre-card-icone {
   width: 24px;
@@ -98,7 +125,8 @@
 .sobre-card-lista {
   list-style-type: disc;
   font-size: 0.8rem;
+  padding-left: 1rem;
 }
 .sobre-card-lista li::marker {
-  color: #D6B894
+  color: #d6b894;
 }
