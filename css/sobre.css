@@ -92,6 +92,8 @@
   width: 70%;
   height: 100%;
 
+  border-top-left-radius: 12px;
+
   background: radial-gradient(
     ellipse at top left,
     rgba(220, 175, 125, 0.18),
@@ -101,6 +103,32 @@
 
   pointer-events: none;
 }
+.sobre-card::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  /* Tamanho total que o degradê vai percorrer */
+  width: 60px;
+  height: 60px;
+
+  /* Cria uma borda sólida com a cor principal (laranja) */
+  border-top: 1px solid #ffdbc2;
+  border-left: 1px solid #ffdbc2;
+  border-top-left-radius: 12px;
+
+  /* A MÁGICA: Uma máscara em degradê para suavizar as pontas */
+  -webkit-mask-image: radial-gradient(
+    circle at top left,
+    black 30%,
+    transparent 80%
+  );
+  mask-image: radial-gradient(circle at top left, black 30%, transparent 80%);
+
+  pointer-events: none;
+}
+
 .sobre-card-icone {
   width: 24px;
   height: auto;
@@ -121,11 +149,15 @@
 }
 .sobre-card-info h3 {
   font-size: 1rem;
+  font-weight: 600;
+  color: #f0f0f0;
 }
 .sobre-card-lista {
   list-style-type: disc;
   font-size: 0.8rem;
   padding-left: 1rem;
+  color: #c0c0c0;
+  line-height: 1.6;
 }
 .sobre-card-lista li::marker {
   color: #d6b894;
