@@ -83,6 +83,7 @@
   padding: 1.5rem;
 }
 .sobre-card::before {
+  /* iluminaçao canto superior esquerdo card*/
   content: "";
   position: absolute;
 
@@ -96,34 +97,42 @@
 
   background: radial-gradient(
     ellipse at top left,
-    rgba(220, 175, 125, 0.18),
-    rgba(220, 175, 125, 0.06) 35%,
-    transparent 70%
+    rgba(255, 219, 194, 0.18),
+    rgba(255, 219, 194, 0.06) 20%,
+    transparent 90%
   );
 
   pointer-events: none;
 }
 .sobre-card::after {
+  /* degrade borda superior esquerda card*/
   content: "";
   position: absolute;
+
   top: -1px;
   left: -1px;
-  
-  width: 60px;   
-  height: 60px;  
-  
+
+  width: 80px;
+  height: 80px;
+
   border-top: 1px solid #ffdbc2;
   border-left: 1px solid #ffdbc2;
-  border-top-left-radius: 12px; 
-  
-  /* Impede o navegador de repetir a máscara e estragar o degradê */
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  border-top-left-radius: 12px;
 
-  /* Aplica o degradê longo usando as duas versões para compatibilidade total */
-  -webkit-mask-image: radial-gradient(circle at top left, black 20%, transparent 90%);
-          mask-image: radial-gradient(circle at top left, black 20%, transparent 90%);
-          
+  -webkit-mask-image: radial-gradient(
+    ellipse at top left,
+    black 0%,
+    black 10%,
+    transparent 65%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at top left,
+    black 0%,
+    black 10%,
+    transparent 65%
+  );
+
   pointer-events: none;
 }
 
@@ -134,10 +143,68 @@
 
   padding: 0.6rem;
 
-  border: 1px solid #3d352c;
+  border: 1px solid rgba(120, 140, 170, 0.2);
   border-radius: 10px;
 
   box-sizing: content-box;
+}
+.sobre-card-icone {
+  position: relative;
+  isolation: isolate;
+}
+
+.sobre-card-icone::before {  /* iluminaçao canto superior esquerdo icone*/
+  content: "";
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+
+  width: 60%;
+  height: 85%;
+
+  border-top-left-radius: 12px;
+
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(255, 219, 194, 0.18),
+    rgba(255, 219, 194, 0.06) 20%,
+    transparent 90%
+  );
+
+  pointer-events: none;
+}
+.sobre-card-icone::after {  /* degrade borda superior esquerda icone*/
+
+  content: "";
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+
+  width: 40px;
+  height: 50px;
+
+  border-top: 1px solid #a08471;
+  border-left: 1px solid #a08471;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 18px;
+
+  -webkit-mask-image: radial-gradient(
+    ellipse at top left,
+    black 0%,
+    black 10%,
+    transparent 65%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at top left,
+    black 0%,
+    black 10%,
+    transparent 65%
+  );
+
+  pointer-events: none;
 }
 .sobre-card-info {
   display: flex;
@@ -151,10 +218,15 @@
 }
 .sobre-card-lista {
   list-style-type: disc;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
   font-size: 0.8rem;
   padding-left: 1rem;
   color: #c0c0c0;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 .sobre-card-lista li::marker {
   color: #d6b894;
