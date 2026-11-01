@@ -2,7 +2,6 @@
   background-image: url(../assets/images/fundo-servicos-mobile.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: 4rem 1.5rem;
   display: flex;
   flex-direction: column;
